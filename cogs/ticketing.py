@@ -7,7 +7,7 @@ import asyncio
 import traceback
 g_id=config.g_id
 verified_id = config.verified_id
-category_id = 1215828705772044338
+category_id = 1479252078139408468
 EMBED_COLOUR = 0x2e352d
 
 bot_owner = lambda interaction: interaction.user.id == 1313413062723768322
@@ -164,7 +164,7 @@ class Tickets(commands.GroupCog, group_name="ticket", description="Ticket comman
             return
         
        
-        role = guild.get_role(1214765662195421254) ## MNR Employee role ID
+        role = guild.get_role(1478219570069246093) ## MNR Employee role ID
         if role is None:
             await interaction.followup.send("Staff role not assigned", ephemeral=True)
             return
@@ -257,5 +257,6 @@ async def setup(bot: commands.Bot) -> None:
         await bot.add_cog(Tickets(bot))
     except Exception as e:
         print(f"Failed to load ticketing cog: {e}")
+
 
 
