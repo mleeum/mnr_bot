@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from config import gen_id, tick_id
+from config import gen_id
 
 EMBED_COLOR = 0x2e352d
 
@@ -16,11 +16,6 @@ class Automsg(commands.Cog):
             print("General channel not found")
             return
         
-        help_channel = guild.get_channel(tick_id)
-        if help_channel is None:
-            print("Help channel not found")
-            return
-        
         welcome_embed = discord.Embed(
             title=f"Welcome {member.display_name}!",
             description=f"Welcome to the Ministry of Natural resources, {member}. If you require assistance, please open a ticket by running ``/ticket create``.",
@@ -30,4 +25,5 @@ class Automsg(commands.Cog):
         
 
 async def setup(bot):
+
     await bot.add_cog(Automsg(bot))
