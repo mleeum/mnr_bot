@@ -40,4 +40,12 @@ class Client(commands.Bot):
 
 
 client = Client(command_prefix="m!", intents=intents)
+
+@client.command(name="sync")
+@commands.is_owner() # Ensures only the bot owner can use this command
+async def sync(ctx: commands.Context) -> None:
+    """Syncs all global application commands to Discord."""
+    await client.tree.sync()
+    await ctx.send("Application commands synchronized globally!", ephemeral = True)
+
 client.run(token, log_handler=handler, log_level=logging.INFO)
