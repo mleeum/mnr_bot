@@ -1,12 +1,12 @@
 # Channels
-g_id = 1343440503407902792
-gen_id = 1476712512933199923
-co_id = 1478201518988722328
-sup_id = 1478228958666424443
+g_id = 1214047159276675082
+gen_id =1214766061224988714
+co_id =1270597381276176445
+sup_id = 1456012742199869642
 
 # Roles
-co_role_id = 1478219570069246093 # Linked to 'MNR Employee'
-fto_role_id = 1478229659874365632 # Linked to 'Field Training Program'
+co_role_id = 1214765662195421254 # Linked to 'MNR Employee'
+fto_role_id = 1456011882795368562 # Linked to 'Field Training Program'
 
-verified_id = 1478578276971839619 # Linked to 'Verified'
+verified_id = 1270550228675596449 # Linked to 'Verified'
 

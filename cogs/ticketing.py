@@ -7,7 +7,7 @@ import asyncio
 import traceback
 g_id=config.g_id
 verified_id = config.verified_id
-category_id = 1479252078139408468
+category_id = 1215828700462055455
 EMBED_COLOUR = 0x2e352d
 
 bot_owner = lambda interaction: interaction.user.id == 1313413062723768322

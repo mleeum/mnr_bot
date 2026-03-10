@@ -39,7 +39,7 @@ class Utils(commands.Cog):
 
     @app_commands.command(name = "request_ridealong", description = "Request a ridealong with an FTO")
     @app_commands.guilds(discord.Object(id=g_id))
-    @app_commands.checks.has_role(1478572817053253824) #REPLACE WITH DCO role
+    @app_commands.checks.has_role(1271686870719270953) #REPLACE WITH DCO role
     async def ridealong(self, interaction: discord.Interaction):
          await interaction.response.send_message(
               interaction.user.mention,
